@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Trigger -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>PlanetStation-Encounters-Capital-Defence-Trigger</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[UseTrigger:true]
+			[Type:TargetNear]
+			[TargetDistance:2500]
+			[MinCooldownMs:5000]
+			[MaxCooldownMs:5001]
+            [StartsReady:true]
+            [MaxActions:-1]
+            [Actions:PlanetStation-Encounters-Capital-Defence-Action]
+			</Description>
+        </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Trigger -->
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Action -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>PlanetStation-Encounters-Capital-Defence-Action</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[SpawnEncounter:true]
+			[Spawner:PlanetStation-Encounters-Capital-Defence-Spawn]
+			</Description>
+        </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Action -->
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Spawn -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>PlanetStation-Encounters-Capital-Defence-Spawn</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Spawn]
+			[UseSpawn:true]
+			[ForceSameFactionOwnership:true]
+			[MaxSpawns:4]
+			[SpawnMinCooldown:900]
+			[SpawnMaxCooldown:950]
+			[SpawnGroups:Planet-Encounters-Capital-Defence-Group]
+			[MinDistance:1000]
+			[MaxDistance:1500]
+			[MinAltitude:1000]
+			[MaxAltitude:1500]
+			[IgnoreSafetyChecks:false]
+			</Description>
+        </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-Capital-Defence-Spawn -->
+	</EntityComponents>
+</Definitions>

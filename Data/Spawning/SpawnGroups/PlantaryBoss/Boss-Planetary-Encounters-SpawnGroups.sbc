@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+<!-- Boss encounters for planets -->
+	<SpawnGroup xsi:type="MyObjectBuilder_SpawnGroupDefinition">
+      <Id Type="MyObjectBuilder_SpawnGroupDefinition" Subtype="MILT-Planet-Encounters-01-Group" />
+	<Description>
+    [Modular Encounters SpawnGroup]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]	
+	[SpawnConditionGroups:Boss-Planet-Encounters-Condition-Groups-Profile]
+	[ManipulationGroups:Boss-Planet-Encounters-Manipulation-Groups-Profile]
+	[ReplenishSystems:true]	
+	[UseRemoteControlCodeRestrictions:true]
+	[RemoteControlCode:MILT-P-1]
+	[RemoteControlCodeMinDistance:15000]
+	[CutVoxelsAtAirtightCells:true]	
+    </Description>
+      <Frequency>3</Frequency>
+      <Prefabs>
+		<!-- S0 -->
+        <Prefab SubtypeId="[IMDC]-Construction-Platform-Ground">
+          <Position>
+            <X>0</X>
+            <Y>25</Y>
+            <Z>0</Z>
+          </Position>
+          <Speed>0</Speed>
+		  <Behaviour>Boss-PlanetStation-Behaviour</Behaviour>
+        </Prefab>
+		<!-- S0 -->
+		</Prefabs>
+    </SpawnGroup>
+<!-- Boss-Planet-Encounters-01-Group -->
+  </SpawnGroups>
+</Definitions>

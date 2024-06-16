@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Incon-SpawnGroup-AtomHeart</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:]
+        [FactionOverride:]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:]
+        [ManipulationProfiles:]
+        [MaxGravity:0.1]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-INC) Atom Heart (Ship)">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Incon-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    
+
+  </SpawnGroups>
+</Definitions>

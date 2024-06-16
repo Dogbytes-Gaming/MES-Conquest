@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+<!-- MILT-PlanetStation-WheeledDefence-Behaviour -->		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>PlanetStation-WheeledDefence-Behaviour</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Horsefly]
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:600]
+			[TargetData:Target-Battle-Wheels]
+			[AutopilotData:PlanetStation-WheeledDefence-Behaviour-Autopilot]
+			[Triggers:Wheeled-WheelStart-Trigger]
+			[Triggers:Wheeled-WheelEnd-Trigger]
+			[Triggers:Wheeled-Wheel-End-Trigger]
+			[Triggers:Wheeled-Wheel-Trigger]
+			[EscortOffsets:{X:-50 Y:1 Z:-50}]
+			[EscortOffsets:{X:50 Y:1 Z:-50}]
+			[EscortOffsets:{X:-75 Y:1 Z:-50}]
+			[EscortOffsets:{X:75 Y:1 Z:-50}]
+			</Description>
+        </EntityComponent>
+<!-- MILT-PlanetStation-Defence-Behaviour-Autopilot -->		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PlanetStation-WheeledDefence-Behaviour-Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:100]
+        [FlyLevelWithGravity:true]
+        [IdealMinSpeed:10]
+        [IdealMaxSpeed:25]
+        [EngageDistancePlanet:500]
+        [DisengageDistancePlanet:800]
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:1000]
+        [StrafeMaxDurationMs:1500]
+        [StrafeSpeedCutOff:45]
+      </Description>
+    </EntityComponent>
+<!-- MILT-PlanetStation-WheeledDefence-Behaviour -->
+	</EntityComponents>
+</Definitions>

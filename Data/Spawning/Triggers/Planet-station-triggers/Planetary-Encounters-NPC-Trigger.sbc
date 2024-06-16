@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+<!-- [Triggers:MILT-PlanetStation-Encounters-NPC-Trigger] -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PlanetStation-Encounters-NPC-Trigger</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		[TargetDistance:2500]
+        [StartsReady:true]
+        [MaxActions:2]
+        [Actions:PlanetStation-Encounters-NPC-Action]
+      </Description>
+    </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-NPC-Trigger -->
+<!-- MILT-PlanetStation-Encounters-NPC-Action -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PlanetStation-Encounters-NPC-Action</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+		[SpawnEncounter:true]
+		[Spawner:PlanetStation-Encounters-NPC-Spawn]
+      </Description>
+    </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-NPC-Action -->	
+<!-- MILT-PlanetStation-Encounters-NPC-Spawn -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>PlanetStation-Encounters-NPC-Spawn</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Spawn]
+			[UseSpawn:true]
+			[ForceSameFactionOwnership:true]
+			[MaxSpawns:1]
+			[SpawnMinCooldown:600]
+			[SpawnMaxCooldown:650]
+			[SpawnGroups:Planet-Encounters-Defence-Group]
+			[MinDistance:3400]
+			[MaxDistance:4500]
+			[MinAltitude:1500]
+			[MaxAltitude:2500]
+			[IgnoreSafetyChecks:false]
+			</Description>
+        </EntityComponent>
+<!-- MILT-PlanetStation-Encounters-NPC-Spawn -->
+	</EntityComponents>
+</Definitions>

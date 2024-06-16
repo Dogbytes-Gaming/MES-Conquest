@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+<!-- [Triggers:MILT-Wheeled-Wheel-Trigger] -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-Wheel-Trigger</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+			[Type:Session]
+			[StartsReady:true]
+			[MaxActions:1]
+			[Actions:Wheeled-Action]
+			</Description>
+        </EntityComponent>
+<!-- MILT-Wheeled-Action -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-Action</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[EnableBlocks:true]
+			[SetGridToDynamic:true]
+			</Description>
+        </EntityComponent>
+<!-- [Triggers:MILT-Wheeled-WheelEnd-Trigger] -->
+	</EntityComponents>
+</Definitions>

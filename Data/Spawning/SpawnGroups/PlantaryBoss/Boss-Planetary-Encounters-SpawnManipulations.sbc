@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- [ManipulationGroups:Boss-Planet-Encounters-Manipulation-Groups-Profile] -->  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Boss-Planet-Encounters-Manipulation-Groups-Profile</SubtypeId>
+      </Id>
+      <Description>
+      [MES Manipulation Group]
+      [ManipulationProfiles:Boss-Planet-Encounters-Manipulation-01]
+      </Description>
+    </EntityComponent>  
+<!-- Boss-Planet-Encounters-Manipulation-Groups-Profile -->	
+<!-- Boss-Planet-Encounters-01 -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Boss-Planet-Encounters-Manipulation-01</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		[RequiredManipulationSpawnConditions:Boss-Planet-Encounters-01]			
+		[GridsAreEditable:true]
+		[GridsAreDestructable:true]	
+		[AssignGridSkin:Concrete_Armor]			
+		[UseBlockNameReplacer:true]
+		[ReplaceBlockNameOld:Antenna]
+		[ReplaceBlockNameNew:Planet Station Offensive War]
+		[ReplaceBlockNameOld:Beacon]
+		[ReplaceBlockNameNew:Planet Station Offensive War]
+		[ReplaceBlockNameOld:Antenna Dish]
+		[ReplaceBlockNameNew:Planet Station Offensive War]
+		[AddDefenseShieldBlocks:false]
+		[ChangeTurretSettings:false]
+		[TurretRange:800]
+		[UseBlockReplacer:true]
+		[ConvertToHeavyArmor:true]
+      </Description>
+    </EntityComponent>
+<!-- Boss-Planet-Encounters-01 -->   
+  </EntityComponents>
+</Definitions>
