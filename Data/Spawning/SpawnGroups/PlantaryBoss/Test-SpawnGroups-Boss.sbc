@@ -1,29 +1,26 @@
 ﻿<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
-
+<!--/MES.Spawn.Prefab.[Wreck]-Volunder-exploration-ship-->
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>Incon-SpawnGroup-AtomHeart</SubtypeId>
+        <SubtypeId>[IMDC]-Atlas-Class-Frigate</SubtypeId>
       </Id>
       <Description>
 
         [Modular Encounters SpawnGroup]
+		    [SpaceRandomEncounter:true]	
+        [FactionOwner:SPRT]
+        [IgnoreCombatPhase:true]
 
-        [SpawnConditionsProfiles:]
-        [FactionOverride:]
-        [ReplenishSystems:true]
-        [UseFirstConditionsAsPersistent:true]
-        [ManipulationGroups:]
-        [ManipulationProfiles:]
-        [MaxGravity:0.1]
+        
 
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-        <Prefab SubtypeId="(NPC-INC) Atom Heart (Ship)">
+        <Prefab SubtypeId="[IMDC]-Atlas-Class-Frigate">
           <Position>
             <X>0.0</X>
             <Y>0.0</Y>
@@ -34,8 +31,7 @@
         </Prefab>
       </Prefabs>
     </SpawnGroup>
-
-    
-
+   
   </SpawnGroups>
 </Definitions>
+

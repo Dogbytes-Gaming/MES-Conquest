@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RespawnShips>
+  <Ship>
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnPlanetPod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_PlanetaryLander</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnPlanetPod.png</Icon>
+      <CooldownSeconds>900</CooldownSeconds>
+      <Prefab>RespawnPlanetPod</Prefab>
+      <PlanetTypes> <!-- automatic locking to planets -->
+          <!--PlanetType>EarthLike</PlanetType-->
+          <!--PlanetType>Mars</PlanetType-->
+          <PlanetType>Alien</PlanetType>
+	        <PlanetType>Titan</PlanetType>
+          <!-- PlanetType>Moon</PlanetType -->
+          <!--PlanetType>Europa</PlanetType-->
+	</PlanetTypes>
+      
+      <MinimalAirDensity>0.8</MinimalAirDensity>
+      <PlanetDeployAltitude>2000</PlanetDeployAltitude>
+      <UseForPlanetsWithAtmosphere>true</UseForPlanetsWithAtmosphere>
+      
+      <InitialLinearVelocity x="0" y="-95" z="0" />
+      <InitialAngularVelocity x="0" y="0.5" z="0" />
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpawn</HelpTextLocalizationId>
+    </Ship>
+    <Ship>
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnSpacePod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_RespawnPodSpace</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnSpacePod.png</Icon>
+      <CooldownSeconds>900</CooldownSeconds>
+      <Prefab>RespawnSpacePod</Prefab>
+      <SpawnPosition x="35254" y="257743" z="5730628" />
+<!-- specific position / if there is a planet-box nearly, you land on a planet! - check the distance. -->
+
+      <SpawnPositionDispersionMin>10000</SpawnPositionDispersionMin>
+<!-- minimum deviation from position -->
+
+      <SpawnPositionDispersionMax>30000</SpawnPositionDispersionMax>
+<!-- maximum deviation from position -->
+      
+      <UseForSpace>true</UseForSpace>
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpaceSpawn</HelpTextLocalizationId>
+    </Ship>
+  
+    <Ship Enabled="false">
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnMoonPod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_PlanetaryLander</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnMoonPod.png</Icon>
+      <CooldownSeconds>900</CooldownSeconds>
+      <Prefab>RespawnMoonPod</Prefab>
+      
+      <PlanetDeployAltitude>8</PlanetDeployAltitude>
+      <UseForPlanetsWithoutAtmosphere>true</UseForPlanetsWithoutAtmosphere>
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpawn</HelpTextLocalizationId>
+    </Ship>
+  </RespawnShips>
+</Definitions>
