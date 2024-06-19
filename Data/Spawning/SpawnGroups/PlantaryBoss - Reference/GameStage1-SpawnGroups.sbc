@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
-<!--/MES.Spawn.Prefab.[Wreck]-Volunder-exploration-ship-->
+<!-- GameStage-Condition-planet-01-Group -->
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -10,11 +10,9 @@
       <Description>
 
         [Modular Encounters SpawnGroup]
-		    [SpaceRandomEncounter:true]	
-        [FactionOwner:SPRT]
-        [IgnoreCombatPhase:true]
-
-        
+        [SpawnConditionGroups:GameStage-Condition-Groups-Profile]
+		   
+               
 
       </Description>
       <IsPirate>true</IsPirate>
@@ -31,7 +29,7 @@
         </Prefab>
       </Prefabs>
     </SpawnGroup>
-   
-  </SpawnGroups>
+   <!-- GameStage-Condition-planet-01-Group -->
+   </SpawnGroups>
 </Definitions>
 
