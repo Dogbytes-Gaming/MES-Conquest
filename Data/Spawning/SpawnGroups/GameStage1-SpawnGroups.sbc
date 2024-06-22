@@ -5,12 +5,15 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>[IMDC]-Atlas-Class-Frigate</SubtypeId>
+        <SubtypeId>[Wreck]-Arke-Supply-Ship</SubtypeId>
       </Id>
       <Description>
 
         [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
         [SpawnConditionGroups:GameStage-Condition-Groups-Profile]
+        [ManipulationProfiles:GameStage1-Manipulation]
 		   
                
 
@@ -18,15 +21,28 @@
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-        <Prefab SubtypeId="[IMDC]-Atlas-Class-Frigate">
+      <!-- S0 -->
+        <Prefab SubtypeId="[Wreck]-Arke-Supply-Ship">
           <Position>
             <X>0.0</X>
             <Y>0.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Incon-Behavior-Boss</Behaviour>
+          <Behaviour>GameStage1-Behavior</Behaviour>
         </Prefab>
+        <!-- S0 -->
+        <!-- S1 -->
+         <Prefab SubtypeId="[Wreck]-Epod1">
+          <Position>
+            <X>300.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+        <!-- S2 -->
       </Prefabs>
     </SpawnGroup>
    <!-- GameStage-Condition-planet-01-Group -->

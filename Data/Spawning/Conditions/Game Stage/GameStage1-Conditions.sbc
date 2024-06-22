@@ -24,12 +24,22 @@
       </Id>
       <Description>
         [MES Spawn Conditions]
-        [FactionOwner:SPRT]
+        [FactionOwner:Wek]
         [PlanetWhitelist:Alien,Titan]
 		    [PlanetaryInstallation:true]
         [SpaceCargoShip:true]
         [CutVoxelsAtAirtightCells:true]	
-		    [PrefabSpawningMode:Random]
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]
+        [PrefabOffsetOverrides:{X:500 Y:0 Z:0}]
+        [PrefabOffsetOverrides:{X:300 Y:500 Z:0}]
+        [PrefabOffsetOverrides:{X:300 Y:500 Z:400}]
+        [PrefabOffsetOverrides:{X:-500 Y:0 Z:-0}]
+        [PrefabOffsetOverrides:{X:300 Y:-500 Z:0}]
+        [PrefabOffsetOverrides:{X:-300 Y:500 Z:400}]
+
+
+        [PrefabFixedCount:6]
 		    [PrefabIndexGroupNames:GameStage-Condition-planet-01-Group]
 		    [ForceStaticGrid:TRUE]
 		    [IgnoreCombatPhase:true]
