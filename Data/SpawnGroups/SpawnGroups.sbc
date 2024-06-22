@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>QONQ-SpawnGroup-SecurityOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnGroupEnabled:true]
+        [PersistentConditions:CONQ-PersistentSpawnConditions-Environment-EarthLike]
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-InstallationSmall]
+        [FactionOverride:PARALLAX]
+        [ReplenishSystems:true]
+        [ManipulationProfiles:MES-Manipulation-RivalAi]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PLX) Security Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>11</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>Parallax-Behavior-BasicInstallation</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>
