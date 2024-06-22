@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions>
+	<BlueprintClassEntries>
+		<Entry Class="CONQ_ResearchMaterials_Basic" BlueprintSubtypeId="CONQ_BP_ResearchMaterial_Propulsion_Basic" />
+		<Entry Class="CONQ_ResearchMaterials_Basic" BlueprintSubtypeId="CONQ_BP_ResearchMaterial_Military_Basic" />
+		<Entry Class="CONQ_ResearchMaterials_Basic" BlueprintSubtypeId="CONQ_BP_ResearchMaterial_Energy_Basic" />
+		<Entry Class="CONQ_ResearchMaterials_Basic" BlueprintSubtypeId="CONQ_BP_ResearchMaterial_Industry_Basic" />
+		<Entry Class="CONQ_ResearchMaterials_Basic" BlueprintSubtypeId="CONQ_BP_ResearchMaterial_Automation_Basic" />
+	</BlueprintClassEntries>
+	<BlueprintClasses>
+		<Class>
+			<Id>
+				<TypeId>BlueprintClassDefinition</TypeId>
+				<SubtypeId>CONQ_ResearchMaterials_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_ResearchMaterials</DisplayName>
+			<Icon>Textures\GUI\Icons\buttons\Modpack.dds</Icon>
+			<HighlightIcon>Textures\GUI\Icons\buttons\Modpack_focus.dds</HighlightIcon>
+			<InputConstraintIcon>Textures\GUI\Icons\buttons\Modpack.dds</InputConstraintIcon>
+			<OutputConstraintIcon>Textures\GUI\Icons\buttons\Modpack.dds</OutputConstraintIcon>
+		</Class>
+	</BlueprintClasses>
+</Definitions>

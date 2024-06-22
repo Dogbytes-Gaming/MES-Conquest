@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions>
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CONQ_BP_ResearchMaterial_Propulsion_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_BP_ResearchMaterial_Propulsion_Basic</DisplayName>
+			<Icon>Textures\GUI\Icons\component\thrust_components_component.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="CONQ_ResearchMaterial_Propulsion_Basic" />
+			<BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CONQ_BP_ResearchMaterial_Military_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_BP_ResearchMaterial_Military_Basic</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Cartridge_Icon.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="CONQ_ResearchMaterial_Propulsion_Basic" />
+			<BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CONQ_BP_ResearchMaterial_Energy_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_BP_ResearchMaterial_Energy_Basic</DisplayName>
+			<Icon>Textures\GUI\Icons\component\BatteryComponent.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="CONQ_ResearchMaterial_Propulsion_Basic" />
+			<BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CONQ_BP_ResearchMaterial_Industry_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_BP_ResearchMaterial_Industry_Basic</DisplayName>
+			<Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="CONQ_ResearchMaterial_Propulsion_Basic" />
+			<BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CONQ_BP_ResearchMaterial_Automation_Basic</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_CONQ_BP_ResearchMaterial_Automation_Basic</DisplayName>
+			<Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+			<Prerequisites>
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="CONQ_ResearchMaterial_Propulsion_Basic" />
+			<BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+	</Blueprints>
+</Definitions>
