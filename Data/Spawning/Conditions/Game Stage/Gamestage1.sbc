@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- [SpawnConditionGroups:GameStage-Condition-Groups-Profile] --> 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GameStage-Condition-Groups-Profile</SubtypeId> 
+      </Id>
+      <Description>
+      [MES Spawn Conditions Group]
+      [SpawnConditionProfiles:GameStage-Condition-planet-01]
+      [SpawnConditionProfiles:GameStage-Condition-planet-02]
+
+      </Description>
+    </EntityComponent>
+<!-- Boss-Planet-Encounters-Groups-Profile -->
+<!-- GameStage-Condition-planet-01 -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GameStage-Condition-planet-01</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:SPRT]
+        [PlanetWhitelist:Alien,Titan]
+		    [PlanetaryInstallation:true]
+        [SpaceCargoShip:true]
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:Random]
+		    [PrefabIndexGroupNames:GameStage-Condition-planet-01-Group]
+		    [ForceStaticGrid:TRUE]
+		    [IgnoreCombatPhase:true]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+<!-- GameStage-Condition-planet-01 -->
+
+
+	
+  </EntityComponents>
+</Definitions>

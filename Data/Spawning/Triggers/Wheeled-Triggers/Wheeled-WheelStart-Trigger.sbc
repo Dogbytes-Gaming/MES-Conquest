@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+<!-- [Triggers:MILT-Wheeled-WheelStart-Trigger]
+	 [Triggers:MILT-Wheeled-WheelEnd-Trigger]
+	 [Triggers:MILT-Wheeled-Wheel-End-Trigger]
+	 [Triggers:MILT-Wheeled-Wheel-Trigger]	-->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-WheelStart-Trigger</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[UseTrigger:true]
+			[Type:TargetNear]
+			[TargetDistance:8500]
+            [StartsReady:true]
+            [MaxActions:1]
+			[Actions:Wheeled-Wheel-Start-Action]
+			</Description>
+        </EntityComponent>
+<!-- MILT-Wheeled-Wheel-Start-Action -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-Wheel-Start-Action</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[EnableBlocks:true]
+			[EnableBlockNames:Wheel Suspension]
+			[EnableBlockStates:On]
+			</Description>
+        </EntityComponent>
+<!-- [Triggers:MILT-Wheeled-WheelEnd-Trigger] -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-WheelEnd-Trigger</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[UseTrigger:true]
+			[Type:Compromised]
+            [MaxActions:2]
+            [Actions:Wheeled-WheelEnd-Action]
+			[Actions:Wheeled-Wheel-End-Action]
+			</Description>
+        </EntityComponent>
+<!-- MILT-Wheeled-WheelEnd-Action -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-WheelEnd-Action</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[TriggerTimerBlocks:true]
+			[TimerBlockNames:Timer Block Wheels Off]
+			[StopAllRotation:true]
+			[StopAllThrust:true]
+			</Description>
+        </EntityComponent>
+<!-- MILT-Wheeled-Wheel-End-Action -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-Wheel-End-Action</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[EnableBlocks:true]
+			[EnableBlockNames:Wheel Suspension]
+			[EnableBlockStates:Off]
+			</Description>
+        </EntityComponent>
+<!-- [Triggers:MILT-Wheeled-Wheel-End-Trigger] -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Wheeled-Wheel-End-Trigger</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[UseTrigger:true]
+			[Type:NoTarget]
+            [MaxActions:2]
+            [Actions:Wheeled-WheelEnd-Action]
+			[Actions:Wheeled-Wheel-End-Action]
+			</Description>
+        </EntityComponent>
+<!-- MILT-Wheeled-Wheel-End-Trigger -->
+	</EntityComponents>
+</Definitions>
