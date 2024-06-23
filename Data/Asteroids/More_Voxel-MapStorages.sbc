@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMapStorages>
+  
+	<VoxelMapStorage>
+      <Id>
+        <TypeId>VoxelMapStorageDefinition</TypeId>
+        <SubtypeId>DeformedIceSphere</SubtypeId>
+      </Id>
+      <StorageFile>VoxelMaps\DeformedIceSphere.vx2</StorageFile>
+      <UseAsPrimaryProceduralAdditionShape>false</UseAsPrimaryProceduralAdditionShape>
+      <UseForProceduralRemovals>true</UseForProceduralRemovals>
+    </VoxelMapStorage>
+	
+	    
+</VoxelMapStorages>
+</Definitions>

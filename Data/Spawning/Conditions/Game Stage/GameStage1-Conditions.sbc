@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
-<!-- [SpawnConditionGroups:GameStage-Condition-Groups-Profile] --> 
+<!-- GameStage-Condition-Groups-Profile --> 
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -14,7 +14,7 @@
 
       </Description>
     </EntityComponent>
-<!-- Boss-Planet-Encounters-Groups-Profile -->
+<!-- ameStage-Condition-Groups-Profile -->
 <!-- GameStage-Condition-planet-01 -->
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -41,7 +41,7 @@
 
         [PrefabFixedCount:6]
 		    [PrefabIndexGroupNames:GameStage-Condition-planet-01-Group]
-		    [ForceStaticGrid:TRUE]
+		    [ForceStaticGrid:true]
 		    [IgnoreCombatPhase:true]
 
         
@@ -50,7 +50,6 @@
       </Description>
     </EntityComponent>
 <!-- GameStage-Condition-planet-01 -->
-
 
 	
   </EntityComponents>
