@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- Ancient-Dereliction-Manipulation-Groups-Profile --> 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Ancient-Dereliction-Manipulation-Groups-Profile</SubtypeId> 
+      </Id>
+      <Description>
+     [MES Manipulation Group]
+      [ManipulationProfiles:Ancient-Dereliction-atmos-Manipulation]
+      [ManipulationProfiles:Ancient-Dereliction-non-O2-Manipulation]
+      [ManipulationProfiles:Ancient-Dereliction-Space-Manipulation]
+
+      </Description>
+    </EntityComponent>
+<!-- Ancient-Dereliction-Manipulation-Groups-Profile -->
+
+
+<!-- Ancient-Dereliction-atmo-Manipulation
+
+This for panets with o2 as there is a rust profile being used will need to creat another for the non-o2 spawns 
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-atmos-Manipulation</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [RequiredManipulationSpawnConditions:Ancient-Dereliction-atmos]
+        [ClearGridInventories:true] 
+
+        [ReduceBlockBuildStates:true] 
+
+        [MinimumBlocksPercent:60]
+        [MaximumBlocksPercent:80]
+        [MinimumBuildPercent:10]
+        [MaximumBuildPercent:50]
+
+
+
+
+        
+        [ShiftBlockColorsHue:true] 
+        [RandomHueShift:true]
+
+
+        [ReskinTarget:true]
+        [SkinRandomBlocks:true] 
+        [SkinRandomBlocksTextures:Wartorn,Heavy_Rust_Armor,Rusty_Armor]
+
+        [MinPercentageSkinRandomBlocks:80]
+        [MaxPercentageSkinRandomBlocks:100]
+
+
+        
+        [UseGridDereliction:true] 
+        [DerelictionProfiles:Ancient-Dereliction-Profile]
+
+
+
+        
+
+
+      </Description>
+
+    </EntityComponent>
+  <!-- Ancient-Dereliction-atmo-Manipulation -->
+  <!-- Ancient-Dereliction-non-O2-Manipulation 
+
+This is for Vacuums  
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-non-O2-Manipulation</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+        [RequiredManipulationSpawnConditions:Ancient-Dereliction-Titan]           
+        [ClearGridInventories:true] 
+
+        [ReduceBlockBuildStates:true] 
+
+        [MinimumBlocksPercent:60]
+        [MaximumBlocksPercent:80]
+        [MinimumBuildPercent:10]
+        [MaximumBuildPercent:50]
+
+
+
+
+        
+        [ShiftBlockColorsHue:true] 
+        [RandomHueShift:true]
+
+
+        [ReskinTarget:true]
+        [SkinRandomBlocks:true] 
+        [SkinRandomBlocksTextures:Wartorn]
+
+        [MinPercentageSkinRandomBlocks:80]
+        [MaxPercentageSkinRandomBlocks:100]
+
+
+        [UseGridDereliction:true] 
+        [DerelictionProfiles:Ancient-Dereliction-Profile]
+
+
+               
+                
+        
+       
+         
+
+      </Description>
+
+    </EntityComponent>
+  <!-- Ancient-Dereliction-non-O2-Manipulation -->
+  <!-- Ancient-Dereliction-Space-Manipulation 
+
+This is for Vacuums  
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-Space-Manipulation</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+        [RequiredManipulationSpawnConditions:Ancient-Dereliction-Space]           
+        [ClearGridInventories:true] 
+
+        [ReduceBlockBuildStates:true] 
+
+        [MinimumBlocksPercent:60]
+        [MaximumBlocksPercent:80]
+        [MinimumBuildPercent:10]
+        [MaximumBuildPercent:50]
+
+
+
+
+        
+        [ShiftBlockColorsHue:true] 
+        [RandomHueShift:true]
+
+
+        [ReskinTarget:true]
+        [SkinRandomBlocks:true] 
+        [SkinRandomBlocksTextures:Wartorn]
+
+        [MinPercentageSkinRandomBlocks:80]
+        [MaxPercentageSkinRandomBlocks:100]
+
+
+        [UseGridDereliction:true] 
+        [DerelictionProfiles:Ancient-Dereliction-Profile]
+
+
+               
+                
+        
+       
+         
+
+      </Description>
+
+    </EntityComponent>
+  <!-- Ancient-Dereliction-Space-Manipulation -->
+
+
+
+  </EntityComponents>
+</Definitions>

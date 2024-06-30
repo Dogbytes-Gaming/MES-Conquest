@@ -4,18 +4,23 @@
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>RivalAI-Datapad-GameStage1</SubtypeId>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MES-SpawnProfile-CargoShipExample</SubtypeId>
       </Id>
-
-      <DisplayName>Datapad Title Goes Here</DisplayName>
       <Description>
 
-      Datapad Body Text Goes Here
+        [MES Spawn Conditions]
+
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+
+	[UseThreatLevelCheck:true]
+	[ThreatLevelCheckRange:15000]
+	[ThreatScoreMinimum:500]
 
       </Description>
-      
-    </EntityComponent>
 
+    </EntityComponent>
+    
   </EntityComponents>
 </Definitions>

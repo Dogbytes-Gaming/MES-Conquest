@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- Crashedships-Spawn-Conditions 
+
+This are just for ships - Need to get Dereliction profile work other wise will have to rework prefabs
+
+
+
+ --> 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Crashedships-Spawn-Conditions-Groups-Profile</SubtypeId> 
+      </Id>
+      <Description>
+      [MES Spawn Conditions Group]
+      [SpawnConditionProfiles:Ancient-Dereliction-Titan]
+      [SpawnConditionProfiles:Ancient-Dereliction-atmos]
+      [SpawnConditionProfiles:Ancient-Dereliction-Space]
+
+      </Description>
+    </EntityComponent>
+<!-- GameStage-Condition-Groups-Profile -->
+<!-- Ancient-Dereliction-Titan 
+         This adds to moons   
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-Titan</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Wek]
+        [PlanetWhitelist:Titan]
+		    [PlanetaryInstallation:true]
+        [MaxGravity:0.25]
+
+        [RotateInstallations:{X:100 Y:100 Z:100}]
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:0}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:50}]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:75}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:-72}]
+        [PrefabOffsetOverrides:{X:200 Y:0 Z:100}]
+        [PrefabOffsetOverrides:{X:-200 Y:0 Z:50}]
+
+        
+
+
+        [PrefabFixedCount:6]
+		    [PrefabIndexGroupNames:Ancient-Dereliction-Titan-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+<!-- Ancient-Dereliction-non-O2 -->
+<!-- Ancient-Dereliction-atmos 
+
+this add to the Planet 
+
+
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-atmos</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Wek]
+        [PlanetWhitelist:Alien]
+		    [PlanetaryInstallation:true]
+        [PlanetRequiresAtmo:True]
+        [MinGravity:0.5]
+
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:0}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:50}]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:75}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:-72}]
+        [PrefabOffsetOverrides:{X:200 Y:0 Z:100}]
+        [PrefabOffsetOverrides:{X:-200 Y:0 Z:50}]
+
+        [PrefabFixedCount:6]
+		    [PrefabIndexGroupNames:Ancient-Dereliction-atmos-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+<!-- Ancient-Dereliction-atmos -->
+<!-- Ancient-Dereliction-Space 
+
+this add to Space
+
+
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Ancient-Dereliction-Space</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Wek]
+        
+        [MinGravity:0.5]
+
+        [SpaceCargoShip:true]
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:0}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:50}]
+        [PrefabOffsetOverrides:{X:100 Y:0 Z:75}]
+        [PrefabOffsetOverrides:{X:-100 Y:0 Z:-72}]
+        [PrefabOffsetOverrides:{X:200 Y:0 Z:100}]
+        [PrefabOffsetOverrides:{X:-200 Y:0 Z:50}]
+
+        [PrefabFixedCount:6]
+		    [PrefabIndexGroupNames:Ancient-Dereliction-Space-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+<!-- Ancient-Dereliction-Space -->
+	
+  </EntityComponents>
+</Definitions>

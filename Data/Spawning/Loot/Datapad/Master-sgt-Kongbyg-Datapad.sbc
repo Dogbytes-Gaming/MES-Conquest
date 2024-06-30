@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Master-sgt-Kongbyg-1</SubtypeId>
+      </Id>
+
+      <DisplayName>Mission Received</DisplayName>
+      <Description>
+
+Command has order us to locate and infultrate the alein research station. 
+
+They have tasked us with collecting the follow:
+
+- Alien schematics  
+- Alien ores
+- Alien Components   
+
+I cant remember the last time we won any contact with the enemy this seems like a fools errond, but orders are orders. As always we will give it 100% 
+but still would perfer to be on the jumpship team. 
+
+Master Sgt Kongbyg
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

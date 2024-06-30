@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Ancient-Dereliction-Profile</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Dereliction]
+
+
+
+      [Blocks:MyObjectBuilder_CubeBlocks_Energy:MyObjectBuilder_BatteryBlock]
+
+
+      [MatchOnlyTypeId:true]
+      [Chance:100]
+      
+
+      [UseSeparatePercentages:true]
+      [MinIntegrityPercentage:30] 
+      [MaxIntegrityPercentage:50] 
+      [MinBuildPercentage:60] 
+      [MaxBuildPercentage:80]
+
+
+      
+
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

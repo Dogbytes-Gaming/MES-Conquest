@@ -35,6 +35,23 @@
     <FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon>
      
     </Faction>
+    <Faction Tag="Jnkr" Founder="Junkers">
+    <Id>
+       <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+       <SubtypeId>Junkers</SubtypeId>
+
+     </Id>
+    <DisplayName>Junkers</DisplayName>
+    <AcceptHumans>false</AcceptHumans>
+    <AutoAcceptMember>false</AutoAcceptMember>
+    <IsDefault>true</IsDefault>
+    <StartingBalance>100000000</StartingBalance>
+            <Type>Trader</Type>
+    <DiscoveredByDefault>false</DiscoveredByDefault>
+    <DefaultRelation>Neutral</DefaultRelation>
+    <FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon>
+     
+    </Faction>
 
 k
 

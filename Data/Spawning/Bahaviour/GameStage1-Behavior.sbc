@@ -9,7 +9,8 @@
             </Id>
             <Description>
 			[RivalAI Behavior]
-			[BehaviorName:Passive]			
+			[BehaviorName:Passive]		
+            	
 			[Triggers:Gamestage1-Start-Trigger]
 			 
 			</Description>

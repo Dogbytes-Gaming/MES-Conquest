@@ -1,0 +1,107 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+<!-- Ancient-Dereliction-Group
+  - Behaviours add to give player the research tag which enables the research station spawn  
+  -  recommended mod to go with this is 3003950722 adds more wrecks with minimal loot  
+  -   "each spawngroup will add a max 6 different Prefabs try to make them spawn in clusters" 
+ -->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>[Wreck]-Epod1</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Crashedships-Spawn-Conditions-Groups-Profile]
+        [ManipulationGroups:Ancient-Dereliction-Manipulation-Groups-Profile]
+		   
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Wreck]-Epod1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+         </Prefabs>
+      </SpawnGroup>
+      <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>[Wreck]-Epod2</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Crashedships-Spawn-Conditions-Groups-Profile]
+        [ManipulationGroups:Ancient-Dereliction-Manipulation-Groups-Profile]
+		   
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Wreck]-Epod2">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+         </Prefabs>
+      </SpawnGroup> 
+      <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>[Wreck]-Epod2</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Crashedships-Spawn-Conditions-Groups-Profile]
+        [ManipulationGroups:Ancient-Dereliction-Manipulation-Groups-Profile]
+		   
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Wreck]-Economy-OrbitalStation-7">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+         </Prefabs>
+      </SpawnGroup>      
+        
+   <!-- Ancient-Dereliction-Group -->   
+   </Prefabs>
+   </SpawnGroup>
+
+   
+   </SpawnGroups>
+</Definitions>
+

@@ -1,0 +1,13 @@
+
+ test Player tags
+
+Create the research station spawngroup, conditions, manipulation, behaviour profiles once completed tidy folders to make a bit more sense
+rename Event-spawngroups to RAI-event-spawngroups and all in the fold to fit this nameing scheme.
+
+Research - To get the research bench spawn
+
+Junkers-Smugglers - start behaviour profile this is the part of the faction which opens up the blackmarket for the players
+
+Lore names to remember 
+
+Master Sgt Kongbyg - Leader of the failed attempt to recover the research table, in the orginal war.
