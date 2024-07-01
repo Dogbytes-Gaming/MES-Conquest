@@ -12,6 +12,7 @@
       [ManipulationProfiles:Ancient-Dereliction-atmos-Manipulation]
       [ManipulationProfiles:Ancient-Dereliction-non-O2-Manipulation]
       [ManipulationProfiles:Ancient-Dereliction-Space-Manipulation]
+      [ManipulationProfiles:Research-desk-mission-Manipulation]
 
       </Description>
     </EntityComponent>
@@ -176,7 +177,57 @@ This is for Vacuums
       </Description>
 
     </EntityComponent>
-  <!-- Ancient-Dereliction-Space-Manipulation -->
+  <!-- Researchd-desk-mission-Manipulation
+  
+  this add the mission loot which gives the player the new reseach desk
+  
+   -->
+  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Research-desk-mission-Manipulation</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [RequiredManipulationSpawnConditions:Research-Desk-Spawn-Conditions]
+
+        [ReduceBlockBuildStates:true] 
+
+        [MinimumBlocksPercent:60]
+        [MaximumBlocksPercent:80]
+        [MinimumBuildPercent:10]
+        [MaximumBuildPercent:50]
+
+
+
+
+        
+        [ShiftBlockColorsHue:true] 
+        [RandomHueShift:true]
+
+
+        [ReskinTarget:true]
+        [SkinRandomBlocks:true] 
+        [SkinRandomBlocksTextures:Wartorn,Heavy_Rust_Armor,Rusty_Armor]
+
+        [MinPercentageSkinRandomBlocks:80]
+        [MaxPercentageSkinRandomBlocks:100]
+
+
+        
+        [UseLootProfiles:true]
+        [LootProfiles:Research-Desk-Unlock]
+
+
+
+        
+
+
+      </Description>
+
+    </EntityComponent>
 
 
 

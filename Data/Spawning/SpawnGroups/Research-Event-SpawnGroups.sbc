@@ -69,57 +69,42 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[Wreck]-Epod1">
-          <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>-100.0</Z>
-          </Position>
-          <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[Wreck]-Epod2">
-          <Position>
-            <X>-250.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[Wreck]-Blue-Ambassador-Explorer">
-          <Position>
-            <X>400.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[Wreck]-Epod1">
-          <Position>
-            <X>-250.0</X>
-            <Y>0.0</Y>
-            <Z>100.0</Z>
-          </Position>
-          <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[Wreck]-Epod1">
-          <Position>
-            <X>-100.0</X>
-            <Y>0.0</Y>
-            <Z>-150.0</Z>
-          </Position>
-          <Speed>18</Speed>
-          <Behaviour>Research-Start-Behavior</Behaviour>
-        </Prefab>
+          <Behaviour>Research-Behavior</Behaviour>
+        </Prefab>        
    <!-- Ancient-Dereliction-Group -->   
    </Prefabs>
    </SpawnGroup>
-		
+		<SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Research-Desk</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Crashedships-Spawn-Conditions-Groups-Profile]
+        [ManipulationGroups:Ancient-Dereliction-Manipulation-Groups-Profile]
+		   
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>     
+        <Prefab SubtypeId="[Wreck]-Volunder-exploration-ship">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Research-Behavior</Behaviour>
+        </Prefab>        
+   <!-- Ancient-Dereliction-Group -->   
+   </Prefabs>
+   </SpawnGroup>
 
 
 	<!--Do Not Edit Below Here-->

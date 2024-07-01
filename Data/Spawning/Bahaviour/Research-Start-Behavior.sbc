@@ -5,7 +5,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
-                <SubtypeId>Research-Start-Behavior</SubtypeId>
+                <SubtypeId>Research-Behavior</SubtypeId>
             </Id>
             <Description>
 			[RivalAI Behavior]
@@ -113,6 +113,7 @@
 
 
         [AddTagstoPlayers:true] 
+        [AddTagsPlayerConditionIds:ResearchDeskProfile]
         [AddTags:Research]
         [AddTagsIncludeSavedPlayerIdentity:true]
 

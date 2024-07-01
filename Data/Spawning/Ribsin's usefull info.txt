@@ -1,7 +1,4 @@
 
-Create the research station spawngroup, conditions, manipulation, behaviour profiles once completed tidy folders to make a bit more sense
-rename Event-spawngroups to RAI-event-spawngroups and all in the fold to fit this nameing scheme.
-
 Black market - will have to be custom spawns.... Need to test if works with Economy turned off. Could be fun to use the vanilla ones and make them look destroyed
  
   Vanilla station names

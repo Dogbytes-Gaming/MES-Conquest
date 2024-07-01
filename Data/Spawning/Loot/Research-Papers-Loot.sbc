@@ -5,28 +5,12 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>Research-Papers-Loot-Profile</SubtypeId>
+          <SubtypeId>Research-Desk-Unlock</SubtypeId>
       </Id>
       <Description>
 
       [MES Loot]
-        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
-        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
-        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
-        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
-        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpit]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitSeat]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpit]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/CockpitOpen]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/RoverCockpit]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitSmall]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitLarge]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockStandingCockpit]
-        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockStandingCockpit]
+        
 
         [ContainerBlockTypes:MyObjectBuilder_CubeBlock/Freight1]
         [ContainerBlockTypes:MyObjectBuilder_CubeBlock/Freight2]
