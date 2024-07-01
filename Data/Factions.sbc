@@ -18,7 +18,7 @@
                                                           WARNING: in code currently Neutral state is Peace state in gameplay sense.   
   </Faction>
     -->
-      <Faction Tag="Wek" Founder="Wrecks">
+      <Faction Tag="Wrek" Founder="Wrecks">
     <Id>
        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
        <SubtypeId>Wrecks</SubtypeId>
@@ -39,6 +39,23 @@
     <Id>
        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
        <SubtypeId>Junkers</SubtypeId>
+
+     </Id>
+    <DisplayName>Junkers</DisplayName>
+    <AcceptHumans>false</AcceptHumans>
+    <AutoAcceptMember>false</AutoAcceptMember>
+    <IsDefault>true</IsDefault>
+    <StartingBalance>100000000</StartingBalance>
+            <Type>Trader</Type>
+    <DiscoveredByDefault>false</DiscoveredByDefault>
+    <DefaultRelation>Neutral</DefaultRelation>
+    <FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon>
+     
+    </Faction>
+    <Faction Tag="Smgl" Founder="Smugglers">
+    <Id>
+       <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+       <SubtypeId>Smugglers</SubtypeId>
 
      </Id>
     <DisplayName>Junkers</DisplayName>

@@ -1,0 +1,132 @@
+
+The first planetary goal
+
+PLanets-Rewards - Factions
+Alien - Jumpdrive - Junkers
+Titon - Blackmarket - Smugglers
+
+PLanets
+
+Alien *HardStart- this is the main planet with the main goal and mission on it which will enable the player/players to travel to the other planets. the Smugglers that spawn here talk about the black market on the moon. 
+Titon *NormalStart- this is a neutral area unitll you attack the smugglers, loot here talks about what is on the planet as this is meant as a side quest which opens the blackmarket the main mission can stil be completed without it. 
+Space *Easystart- all loot here points the player to the planet with no spawns other than the wrecks and junker Cargoships (alien-Other planet lanes), Smugglers are very rare (titon-other planet lanes )
+
+
+Rewards
+
+Jumpdrive this is a scamatic - this is a spawn which can be linked to the faction reputation once the player gets to -value with the junkers then the spawn then comes available
+
+Blackmarket this is a game mechanic - this is a spawn on titan and in the black market station there are missions, and purchase the player can make(WIP). 
+
+
+Factions 
+
+Junkers - they start as an enemy to the player their role on the planet and in this system is they collect old ships, stations and reprocess them in to use somehome. the alien planet is a
+processing facilaty for the junkers with alot of cargo ship activety. Will attack the player if they get within range will be op at this stage.
+
+Smugglers - this is the only faction that does not start as an enemy with the player and they use titon as their main hide out. if the player becomes an enemy to them they will have random encounters spawn and attack the player
+but if the player chooses to do some missions for them at the black market and get a positive relationship with them, they will spawn hideouts through out the system where the player can buy datapads with info on the other planets and moons. 
+
+
+
+- loot Datapads tell the story of Master Sgt kongbygs adventure to the planet and how he discovers a jumpdrive production facilaty avaible on the planet and come is into contact with a friendly group of smugglers on the moon 
+
+- Smugglers are cargo spawns and open talk on comms while not in a negative relation to the player about the black market on the moon when negative they give the player false information.
+
+
+What do we need for each factions 
+
+Select prefabs - need small outpost to start use diffulcty for the end hard which is mission
+P.I.
+Easy - Passive				Medium - Reactive				Hard - attack on sight
+[Junk]-Junker-Repair-Hanger		[Junk]-Cargo-Depot 				[Junk]-Wall-Base-01
+[Junk]-Junk-Store			[Junk]-M-Base Mk1
+C.S
+Hangman's Hollow			[Junk]-Nomad-Cargo-Ship	
+[Junk]-Junker-R-Cargo			Junker-Cargo-AirShip-MK1
+[Junk]-Junker-Cargo-AirShip		[Junk]-Junker-Cargo-AirShip-P
+
+[Junk]-Smuggler				
+
+Spawnconditions - These apply across the world but the boss spawn would be before medium aimed at pushing the player into medium 
+Easy
+Medium
+Hard 
+Boss fight
+
+Spawngroups 
+
+Behaviour - for trigger condition think about if they can be made global. using the spawn condition [CheckForSpawnConditions:true/false] [RequiredSpawnConditions:Value]
+Lootprofile
+Bossfight
+
+
+Bossfight idea 
+
+using the MES Boss fight system as it gives the player a gps and 20mins to get to the boss fight. but it also has a 20 min cooldown, will check gobal events to see if that is better.
+
+
+Ideas
+Pros							Cons
+If they destroy the antena				if in a ships
+								
+no re-enforcements else npc come on foot                triggers a search party to come looking for them 
+
+if night						if day
+can sneak in undetected					causes npc's to spawn at the station 
+
+if found a the security code data pad			no security code
+
+
+the doors will be open 					Alarm goes of when they touch a door trigger and emergency beacon giving players a 5 mins to get in and out. 
+
+
+
+
+
+
+
+
+
+Black market - will have to be custom spawns.... Need to test if works with Economy turned off. Could be fun to use the vanilla ones and make them look destroyed and crashed on planets ect
+ 
+  Vanilla station names
+    [Prefabs:Economy_MiningStation_1]
+      [Prefabs:Economy_MiningStation_2]
+      [Prefabs:Economy_MiningStation_3]
+      [Prefabs:Economy_OrbitalStation_1]
+      [Prefabs:Economy_OrbitalStation_2]
+      [Prefabs:Economy_OrbitalStation_3]
+      [Prefabs:Economy_OrbitalStation_4]
+      [Prefabs:Economy_OrbitalStation_5]
+      [Prefabs:Economy_OrbitalStation_6]
+      [Prefabs:Economy_OrbitalStation_7]
+      [Prefabs:Economy_Outpost_1]
+      [Prefabs:Economy_Outpost_2]
+      [Prefabs:Economy_Outpost_3]
+      [Prefabs:Economy_Outpost_4]
+      [Prefabs:Economy_Outpost_5]
+      [Prefabs:Economy_Outpost_6]
+      [Prefabs:Economy_Outpost_7]
+      [Prefabs:Economy_Outpost_8]
+      [Prefabs:Economy_Outpost_9]
+      [Prefabs:Economy_SpaceStation_1]
+      [Prefabs:Economy_SpaceStation_2]
+      [Prefabs:Economy_SpaceStation_3]
+      [Prefabs:Economy_SpaceStation_4]
+      [Prefabs:Economy_SpaceStation_5]
+      [Prefabs:Economy_SpaceStation_1]
+
+
+
+
+ !!--- test Player tags again and again---!!
+
+
+Research - need to add the actual items to the loot table
+
+Junkers-Smugglers - start behaviour profile this is the part of the faction which opens up the blackmarket for the players
+
+Lore names to remember 
+
+Master Sgt Kongbyg - Leader of the failed attempt to recover the research table, in the orginal war.

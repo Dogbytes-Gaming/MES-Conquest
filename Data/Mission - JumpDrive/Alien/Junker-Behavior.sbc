@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+    <!-- GameStage1-Behavior -->		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Junker-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Passive]	
+            	
+			[Triggers:Junker-Damage-Trigger]
+
+			 
+			</Description>
+        </EntityComponent>
+<!-- Junker-trigger-Conditions -->
+<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Junker-triggerConditionProfile</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+  
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+      
+      </Description>
+      
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Damage-Trigger</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [UseTrigger:true]
+        [Type:Damage]
+        [DamageTypes:Any]
+        [ExcludedDamageTypes:Environment]
+        [ExcludedDamageTypes:Deformation]
+        [ExcludedDamageTypes:Fire]
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+        [Conditions:VJunker-triggerConditionProfile]
+        [StartsReady:true]
+        [MaxActions:1]
+
+
+
+
+           
+
+        
+
+        
+
+
+
+
+      </Description>
+    </EntityComponent>
+    
+
+
+
+
+
+
+
+
+	</EntityComponents>
+</Definitions>

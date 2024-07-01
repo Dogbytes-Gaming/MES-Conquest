@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- Junker-Conditions 
+
+This applies across the map - the boss is meant to be easy and aimed to spawn before the player gets to far into the these 
+
+
+
+ --> 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Junker-PlanetInst-Conditions</SubtypeId> 
+      </Id>
+      <Description>
+      [MES Spawn Conditions Group]
+      [SpawnConditionProfiles:Junkers-Easy-PlanetInst]
+      [SpawnConditionProfiles:Junkers-Medium-PlanetInst]
+      [SpawnConditionProfiles:Junkers-Hard-PlanetInst]
+      
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Easy-PlanetInst</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+		    [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:50]
+        [MinGravity:0.5]
+
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Easy-PlanetInst-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-100]
+        [MaximumReputation:1500]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Medium-PlanetInst</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+		    [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:50]
+        [MinGravity:0.5]
+
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Medium-PlanetInst-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-1000]
+        [MaximumReputation:-100]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Hard-PlanetInst</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+		    [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:50]
+        [MinGravity:0.5]
+
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Hard-PlanetInst-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-1500]
+        [MaximumReputation:-1000]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+
+    <!-- this the boss encounter -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Boss-PlanetInst</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+        [BossEncounterAtmo:true]
+        [BossCustomAnnounceEnable:true]
+        [BossCustomAnnounceAuthor: Suit Ai]
+        [BossCustomAnnounceMessage:Receiveing the location for the JumpDrive Schematic, discression is of the utter most importance the longer you can go unnoticed the better.]
+        [BossCustomGPSLabel:JumpDrive-Schematic]
+        [BossCustomGPSColor:Green]
+
+
+
+
+		    [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:50]
+        [MinGravity:0.5]
+
+        [CutVoxelsAtAirtightCells:true]	
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Hard-PlanetInst-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-1500]
+        [MaximumReputation:-375]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+
+	
+  </EntityComponents>
+</Definitions>
