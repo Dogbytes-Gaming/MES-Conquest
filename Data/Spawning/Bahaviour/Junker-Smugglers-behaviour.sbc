@@ -12,16 +12,16 @@
 			[BehaviorName:Passive]		
             	
 			[Triggers:Ship-Damage-Trigger]
-            [Triggers:Smugglers-Chat-Trigger]
-            [Triggers:Player near]
-            [Triggers:Smugglers]
+      [Triggers:Smugglers-Chat-Trigger]
+      [Triggers:Player near]
+      [Triggers:Smugglers]
 			 
 
 
 			</Description>
         </EntityComponent>
 <!-- Junker-Smugglers-Behavior -->
-EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
         <SubtypeId>Ship-Damage-Trigger</SubtypeId>
@@ -39,20 +39,30 @@ EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
         [StartsReady:true]
         [MaxActions:1]
 
-        [Actions:Damage-Spawn-Action]
-        [Actions:Smuggler-Spawn-Action]
-        [Actions:Smuggler-Spawn-Action]
-
-        
-
-        
-
-        
-
-
-
-
+        [Actions:Change-behaviour-Action]
+          
       </Description>
+
     </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Change-behaviour-Action</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [ChangeBehaviorSubclass:true] 
+        [NewBehaviorSubclass:Horsefly]
+
+                  
+      </Description>
+
+    </EntityComponent>
+
+
+
+
+
+
 	</EntityComponents>
 </Definitions>

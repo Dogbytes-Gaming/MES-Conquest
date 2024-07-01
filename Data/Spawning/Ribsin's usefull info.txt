@@ -1,8 +1,41 @@
 
- test Player tags
-
 Create the research station spawngroup, conditions, manipulation, behaviour profiles once completed tidy folders to make a bit more sense
 rename Event-spawngroups to RAI-event-spawngroups and all in the fold to fit this nameing scheme.
+
+Black market - will have to be custom spawns.... Need to test if works with Economy turned off. Could be fun to use the vanilla ones and make them look destroyed
+ 
+  Vanilla station names
+  [Prefabs:Economy_MiningStation_1]
+      [Prefabs:Economy_MiningStation_2]
+      [Prefabs:Economy_MiningStation_3]
+      [Prefabs:Economy_OrbitalStation_1]
+      [Prefabs:Economy_OrbitalStation_2]
+      [Prefabs:Economy_OrbitalStation_3]
+      [Prefabs:Economy_OrbitalStation_4]
+      [Prefabs:Economy_OrbitalStation_5]
+      [Prefabs:Economy_OrbitalStation_6]
+      [Prefabs:Economy_OrbitalStation_7]
+      [Prefabs:Economy_Outpost_1]
+      [Prefabs:Economy_Outpost_2]
+      [Prefabs:Economy_Outpost_3]
+      [Prefabs:Economy_Outpost_4]
+      [Prefabs:Economy_Outpost_5]
+      [Prefabs:Economy_Outpost_6]
+      [Prefabs:Economy_Outpost_7]
+      [Prefabs:Economy_Outpost_8]
+      [Prefabs:Economy_Outpost_9]
+      [Prefabs:Economy_SpaceStation_1]
+      [Prefabs:Economy_SpaceStation_2]
+      [Prefabs:Economy_SpaceStation_3]
+      [Prefabs:Economy_SpaceStation_4]
+      [Prefabs:Economy_SpaceStation_5]
+      [Prefabs:Economy_SpaceStation_1]
+
+
+
+
+ !!--- test Player tags ---!!
+
 
 Research - To get the research bench spawn
 
