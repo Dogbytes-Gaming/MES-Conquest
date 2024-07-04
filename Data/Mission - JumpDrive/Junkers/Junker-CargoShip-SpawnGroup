@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+<!-- Junker-CargoShip-SpawnGroup
+  - these are the junkers spawn across the world
+  - 3 Maintypes - Cargo, convoy and wheeled. 
+  - Sub types for cargo Corvette,Frigate,Destroyer,Cruiser,Carrier
+
+ -->
+  <!-- Corvette Ships
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShips-Corvette</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>40.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Junk]-Nomad-Cargo-Ship">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Smuggler">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Junker Cargo Ship Mk 1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Junker Cargo Ship Mk 2">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>-100.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>   
+      </Prefabs>
+    </SpawnGroup>  -->
+     <!-- Frigate Ships -->    
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Frigate</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>30.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="Solar Bomber Mk 3">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Nomad-Cargo-Ship">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Smuggler">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Junker Cargo Ship Mk 1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Junker Cargo Ship Mk 2">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-CargoShip</Behaviour>
+        </Prefab>
+
+        </Prefabs>
+      </SpawnGroup>   
+      <!-- Destroyer Ships -->
+      <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Destroyer</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>20.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Junk]-Junker-Cargo-AirBoat-MK1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Junker-Cargo-AirShip">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        </SpawnGroup>  
+         <Prefab SubtypeId="[Junk]-Junker-Cargo-AirShip-P">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junker]-Gunboat-Airship-Mk1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+         </Prefabs>
+        </SpawnGroup>  
+        <!-- Cruiser Ships 
+        <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Cruiser</SubtypeId>
+      </Id>
+      <Description>
+      
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="Nomad-Cargo-Ship-Hover">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Solar Bomber Mk 3">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        
+
+        </Prefabs>
+      </SpawnGroup>    -->
+      <!-- Carrier Ships 
+        <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Carrier</SubtypeId>
+      </Id>
+      <Description>
+      
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="Nomad-Cargo-Ship-Hover">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Solar Bomber Mk 3">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        
+
+        </Prefabs>
+      </SpawnGroup>   -->
+
+      <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Convoys</SubtypeId>
+      </Id>
+      <Description>
+      <!-- Convoy Ships, use behaviour to spawn convoy -->
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>30.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="Nomad-Cargo-Ship-Hover">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Solar Bomber Mk 3">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Solar Bomber Mk 3">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Convoy</Behaviour>
+        </Prefab>
+        
+
+        </Prefabs>
+      </SpawnGroup>    
+
+      <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Junker-CargoShip-Convoys</SubtypeId>
+      </Id>
+      <Description>
+      <!-- Wheeled, use behaviour to Wheeled -->
+
+        [Modular Encounters SpawnGroup]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+        [SpawnConditionGroups:Junker-Conditions]
+        [ManipulationGroups:Junker-Manipulation]       
+        
+               
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>30.0</Frequency>
+      <Prefabs>     
+         <Prefab SubtypeId="[Junk]-Armadillo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Wheeled</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Armadill-Hover">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Wheeled</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Armadillo-Mk1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Wheeled</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[Junk]-Truck">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Wheeled</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="Junker-Mover">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Junker-Wheeled</Behaviour>
+        </Prefab>
+
+        </Prefabs>
+      </SpawnGroup>    
+     
+         
+        
+    
+
+   
+   </SpawnGroups>
+</Definitions>

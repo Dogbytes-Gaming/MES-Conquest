@@ -5,9 +5,15 @@
 
 This applies across the map - the boss is meant to be easy and aimed to spawn before the player gets to far into the these 
 
+spawnconiditon profile ned to be set so there can be a reputation check, then that a reference for a behavour trigger profile which changes behiours and settings based on aproaching player reputation 
+
+Idea, we can have a defualt trigger group for all certain parts of factions behaviours that includes - Reputation check, Damage, Retreat, Weather,CommandReceived 
+
+
 
 
  --> 
+ 
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -29,15 +35,18 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
       <Description>
         [MES Spawn Conditions]
         [FactionOwner:Junkers]
+        [PlanetBlacklist:Mars,Trinon,Pertum]
 		    [PlanetaryInstallation:true]
         [PlanetaryInstallationChance:50]
-        [MinGravity:0.5]
+        [MinGravity:0.25]
+        [MaxGravity:1.5]
+        [CutVoxelsAtAirtightCells:true]
 
-        [CutVoxelsAtAirtightCells:true]	
+        
 		    [PrefabSpawningMode:RandomFixedCount]
         [AllowPrefabIndexReuse:false]     
         [PrefabFixedCount:1]
-		    [PrefabIndexGroupNames:Junkers-Easy-PlanetInst-Group]
+		    [PrefabIndexGroupNames:Junkers-Easy-Group]
 		    [ForceStaticGrid:true]
 		    [IgnoreCombatPhase:true]
 
@@ -45,7 +54,7 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
         [PlayerConditionIds:JumpDrive]
         [UsePlayerFactionReputation:true]
         [PlayerReputationCheckRadius:10000]
-        [MinimumReputation:-100]
+        [MinimumReputation:-250]
         [MaximumReputation:1500]
 
         
@@ -64,7 +73,8 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
 		    [PlanetaryInstallation:true]
         [PlanetaryInstallationChance:50]
         [MinGravity:0.5]
-
+        [CutVoxelSize:3]
+        [CutVoxelsAtAirtightCells:true]
         [CutVoxelsAtAirtightCells:true]	
 		    [PrefabSpawningMode:RandomFixedCount]
         [AllowPrefabIndexReuse:false]     
@@ -78,7 +88,7 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
         [UsePlayerFactionReputation:true]
         [PlayerReputationCheckRadius:10000]
         [MinimumReputation:-1000]
-        [MaximumReputation:-100]
+        [MaximumReputation:-175]
 
         
 
@@ -96,8 +106,9 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
 		    [PlanetaryInstallation:true]
         [PlanetaryInstallationChance:50]
         [MinGravity:0.5]
-
+        [CutVoxelsAtAirtightCells:true]
         [CutVoxelsAtAirtightCells:true]	
+
 		    [PrefabSpawningMode:RandomFixedCount]
         [AllowPrefabIndexReuse:false]     
         [PrefabFixedCount:1]
@@ -111,6 +122,40 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
         [PlayerReputationCheckRadius:10000]
         [MinimumReputation:-1500]
         [MaximumReputation:-1000]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junker-CargoShip-Corvette</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+		    [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:50]
+        [MinGravity:0.3]
+        [MaxGravity:1.5]
+        [CutVoxelsAtAirtightCells:true]
+
+        
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Easy-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-250]
+        [MaximumReputation:1500]
 
         
 
@@ -132,7 +177,6 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
         [BossCustomAnnounceEnable:true]
         [BossCustomAnnounceAuthor: Suit Ai]
         [BossCustomAnnounceMessage:Receiveing the location for the JumpDrive Schematic, discression is of the utter most importance the longer you can go unnoticed the better.]
-        [BossCustomGPSLabel:JumpDrive-Schematic]
         [BossCustomGPSColor:Green]
 
 
@@ -141,12 +185,13 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
 		    [PlanetaryInstallation:true]
         [PlanetaryInstallationChance:50]
         [MinGravity:0.5]
+        [PlanetBlacklist:Earthlike,Mar]  
 
         [CutVoxelsAtAirtightCells:true]	
 		    [PrefabSpawningMode:RandomFixedCount]
         [AllowPrefabIndexReuse:false]     
         [PrefabFixedCount:1]
-		    [PrefabIndexGroupNames:Junkers-Hard-PlanetInst-Group]
+		    [PrefabIndexGroupNames:Junkers-Boss-PlanetInst-Group]
 		    [ForceStaticGrid:true]
 		    [IgnoreCombatPhase:true]
 
@@ -155,7 +200,7 @@ This applies across the map - the boss is meant to be easy and aimed to spawn be
         [UsePlayerFactionReputation:true]
         [PlayerReputationCheckRadius:10000]
         [MinimumReputation:-1500]
-        [MaximumReputation:-375]
+        [MaximumReputation:-150]
 
         
 

@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- Junker-Conditions 
+
+This applies across the map -  
+
+then that a reference for a behavour trigger profile which changes behiours and settings based on aproaching player reputation 
+
+Idea, we can have a defualt trigger group for all certain parts of factions behaviours that includes - Reputation check, Damage, Retreat, Weather,CommandReceived 
+
+
+
+
+ --> 
+ 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Junkers-Easy-CargoShip</SubtypeId> 
+      </Id>
+      <Description>
+      [MES Spawn Conditions Group]
+      [SpawnConditionProfiles:Junkers-Easy-CargoShip]
+      [SpawnConditionProfiles:Junkers-Medium-CargoShip]
+      [SpawnConditionProfiles:Junkers-Hard-CargoShip]
+      
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Easy-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+        [AtmosphericCargoShip:true]
+		    [GravityCargoShip:true]
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+        [UseAutoPilotInSpace:true]
+        [CargoShipTerrainPath:true]
+        [AtmosphericCargoShipChance:40]
+        [GravityCargoShipChance:40]        
+        [SpaceCargoShipChance:40]
+        [LunarCargoShipChance:40]
+
+        
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Easy-Group]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-0]
+        [MaximumReputation:1500]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Medium-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+       [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+        [AtmosphericCargoShip:true]
+		    [GravityCargoShip:true]
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+        [UseAutoPilotInSpace:true]
+        [CargoShipTerrainPath:true]
+        [AtmosphericCargoShipChance:40]
+        [GravityCargoShipChance:40]        
+        [SpaceCargoShipChance:40]
+        [LunarCargoShipChance:40]
+        
+        [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+        [PrefabIndexGroupNames:Junkers-Medium-CargoShipp]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:0]
+        [MaximumReputation:-750]
+
+        
+
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Junkers-Hard-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+        [FactionOwner:Junkers]
+        [AtmosphericCargoShip:true]
+		    [GravityCargoShip:true]
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+        [UseAutoPilotInSpace:true]
+        [CargoShipTerrainPath:true]
+        [AtmosphericCargoShipChance:40]
+        [GravityCargoShipChance:40]        
+        [SpaceCargoShipChance:40]
+        [LunarCargoShipChance:40]
+
+		    [PrefabSpawningMode:RandomFixedCount]
+        [AllowPrefabIndexReuse:false]     
+        [PrefabFixedCount:1]
+		    [PrefabIndexGroupNames:Junkers-Hard-CargoShip]
+		    [ForceStaticGrid:true]
+		    [IgnoreCombatPhase:true]
+
+        [UsePlayerCondition:true]
+        [PlayerConditionIds:JumpDrive]
+        [UsePlayerFactionReputation:true]
+        [PlayerReputationCheckRadius:10000]
+        [MinimumReputation:-1500]
+        [MaximumReputation:-500]
+
+        
+
+
+      </Description>
+    </EntityComponent>  
+	
+  </EntityComponents>
+</Definitions>

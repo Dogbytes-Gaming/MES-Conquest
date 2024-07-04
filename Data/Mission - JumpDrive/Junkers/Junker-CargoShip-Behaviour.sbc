@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <EntityComponents>
-    <!-- GameStage1-Behavior -->		
+    <!-- Junker-CargoShip-Behaviour
+
+    This is to include the convoy's and some planet encounters behaviour 
+
+       
+    
+    
+    -->		
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
@@ -16,22 +23,8 @@
 			 
 			</Description>
         </EntityComponent>
-<!-- Junker-trigger-Conditions -->
-<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>Junker-triggerConditionProfile</SubtypeId>
-      </Id>
-      <Description>
+<!-- Junker-Damage-trigger-Conditions -->
 
-      [RivalAI Condition]
-  
-      [UseConditions:true]
-      [MatchAnyCondition:true]
-      
-      </Description>
-      
-    </EntityComponent>
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -47,7 +40,7 @@
         [ExcludedDamageTypes:Fire]
         [MinCooldownMs:60000]
         [MaxCooldownMs:60001]
-        [Conditions:VJunker-triggerConditionProfile]
+        [Conditions:Junker-PlayerRelationship-check]
         [StartsReady:true]
         [MaxActions:1]
 
@@ -65,7 +58,22 @@
 
       </Description>
     </EntityComponent>
-    
+    <!-- Junker-PlayerRelationship-check -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Junker-PlayerRelationship-check</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+  
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+      
+      </Description>
+      
+    </EntityComponent>
 
 
 

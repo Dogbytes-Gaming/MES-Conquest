@@ -12,29 +12,12 @@
 	
 	
 
-    [CheckPlayerTags:true]
+  [CheckPlayerTags:true]
 	[IncludedPlayerTag:Research]
 
       </Description> 
-    </EntityComponent>
-     </EntityComponents>
-</Definitions>
-<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>JumpDrive</SubtypeId>
-      </Id>
-      <Description>
-	[MES Player Condition]
-	
-	
-
-    [CheckPlayerTags:true]
-	[IncludedPlayerTag:JumpDrive]
-
-      </Description> 
-    </EntityComponent>
-     </EntityComponents>
+    </EntityComponent>   
+    </EntityComponents>
 </Definitions>
 
    

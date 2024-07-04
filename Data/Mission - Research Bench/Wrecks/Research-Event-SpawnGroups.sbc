@@ -65,8 +65,8 @@
         <Prefab SubtypeId="[Wreck]-Volunder-exploration-ship">
           <Position>
             <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
+            <Y>30.0</Y>
+            <Z>30.0</Z>
           </Position>
           <Speed>18</Speed>
           <Behaviour>Research-Behavior</Behaviour>
@@ -84,7 +84,7 @@
         [Modular Encounters SpawnGroup]
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
-        [SpawnConditionGroups:Crashedships-Spawn-Conditions-Groups-Profile]
+        [SpawnConditionGroups:Research-Desk-Mission-Conditions]
         [ManipulationGroups:Ancient-Dereliction-Manipulation-Groups-Profile]
 		   
                
@@ -93,14 +93,14 @@
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>     
-        <Prefab SubtypeId="[Wreck]-Volunder-exploration-ship">
+        <Prefab SubtypeId="[Wreck]-Research-OrbitalStation-7">
           <Position>
             <X>0.0</X>
             <Y>0.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Research-Behavior</Behaviour>
+          <Behaviour></Behaviour>
         </Prefab>        
    <!-- Ancient-Dereliction-Group -->   
    </Prefabs>

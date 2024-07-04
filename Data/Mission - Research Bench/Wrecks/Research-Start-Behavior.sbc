@@ -108,16 +108,12 @@
         [MinCooldownMs:60000]
         [MaxCooldownMs:60001]
         [StartsReady:true]
-        [MaxActions:1]
+        [ActionExecution:all]
         [Actions:Smuggler-Spawn-Action]
+        [Actions:AddResearchTag-Action ]
 
 
-        [AddTagstoPlayers:true] 
-        [AddTagsPlayerConditionIds:ResearchDeskProfile]
-        [AddTags:Research]
-        [AddTagsIncludeSavedPlayerIdentity:true]
-
-        
+              
 
         
 
@@ -125,6 +121,26 @@
 
 
       </Description>
+    </EntityComponent>
+    <!-- AddResearchTag-Action -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>AddResearchTag-Action</SubtypeId>
+      </Id>
+      <Description>
+
+      
+			[RivalAI Action]      
+      [AddTagstoPlayers:true] 
+      [AddTagsPlayerConditionIds:ResearchDeskProfile]
+      [AddTags:Research]
+      [AddTagsIncludeSavedPlayerIdentity:true]
+
+      
+      
+       </Description>
+      
     </EntityComponent>
     <!-- Debris-Spawn-Action -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
