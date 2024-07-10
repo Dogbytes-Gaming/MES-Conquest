@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <EntityComponents>
-    <!-- GameStage1-Behavior -->		
+    <!-- Research-Behavior -->		
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
@@ -11,38 +11,44 @@
 			[RivalAI Behavior]
 			[BehaviorName:Passive]	
             	
-			[Triggers:Research-Start-Trigger]
+			[Triggers:WreckFound]
       [Triggers:Damage-Trigger]
 
 			 
 			</Description>
         </EntityComponent>
-<!-- GameStage1-Behavior -->
+<!-- Researchdesk-Behavior -->		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>ResearchDesk-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Passive]	
+            	
+			[Triggers:WreckFound]
+      [Triggers:Scanning-staton]
+      [Triggers:Playerleavesscan] 
+      [Triggers:Research-desk-unlock]
+
+			 
+			</Description>
+        </EntityComponent>
 
 <!-- Research-Start-Trigger -->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>Research-Start-Trigger</SubtypeId>
+        <SubtypeId>WreckFound</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
-        [Type:PlayerNear]
+        [Type:PlayerFar]
         [UseTrigger:true]
 
-        [TargetDistance:3000]
-        
-
-      
-        [Actions:Announce-area-Action]
-        
-
-        
-
-        
-
-
-
+        [TargetDistance:5000]            
+        [Actions:Announce-area-Action]            
 
       </Description>
     </EntityComponent>
@@ -77,14 +83,14 @@
       [Chance:100]
       [MaxChats:2]
       [IgnoreAntennaRequirement:true]
-      [IgnoredAntennaRangeOverride:4000]
-      [GPSLabel:War Wreck]
+      [IgnoredAntennaRangeOverride:10000]
+      [GPSLabel:Wreck]
       [Author:Ai]
       [Color:Blue]      
-      [ChatMessages:Hello {PlayerName}, we are picking up a strange signal!]
+      [ChatMessages:Scans have detected a wreckage {GPS}]
       [ChatAudio:GreetingSoundId-A]
       [BroadcastChatType:Chat]      
-      [ChatMessages:{GPS}]
+      [ChatMessages:Scanning area..........]
       [ChatAudio:GreetingSoundId-B]
       [BroadcastChatType:Notify]
 
@@ -109,7 +115,6 @@
         [MaxCooldownMs:60001]
         [StartsReady:true]
         [ActionExecution:all]
-        [Actions:Smuggler-Spawn-Action]
         [Actions:AddResearchTag-Action ]
 
 
@@ -140,58 +145,60 @@
       
       
        </Description>
+       <!-- Research scan start trugger -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Scanning-staton</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [Type:PlayerNear]
+        [UseTrigger:true]
+        [ActionExecution:Sequential]
+        [MaxActions:1]
+        [MinCooldownMs:300]
+
+        [TargetDistance:100]  
+                                 
+        [Actions:Scanning Started]  
+        [Actions:Scanning finished]          
+
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Scanning-finished</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [Type:PlayerNear]
+        [UseTrigger:true]
+
+        [TargetDistance:100]            
+        [Actions:Scanning finished]            
+
+      </Description>
+    </EntityComponent>
       
     </EntityComponent>
-    <!-- Debris-Spawn-Action -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>Smuggler-Spawn-Action</SubtypeId>
+          <SubtypeId>Scanning Started</SubtypeId>
       </Id>
       <Description>
 
       
-			[RivalAI Action]      
-      [SpawnEncounter:true]
-      [Spawner:Smuggler-SpawnProfile]
-
+			[RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:Announce-area-ChatProfile]
       
       
        </Description>
-      
-    </EntityComponent>
     
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>Smuggler-SpawnProfile</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Spawn]
-      [SpawningType:CustomSpawn]
-      [UseSpawn:true]      
-      [StartsReady:true]
-      [MaxSpawns:1]
-      [SpawnMinCooldown:600]
-			[SpawnMaxCooldown:650]      
-      [SpawnGroups:Event-Smuggler]   
-
-
-
-      [UseRelativeSpawnPosition:true]  
-      [InheritNpcAltitude:true]
-      [RelativeSpawnOffset:{X:1500 Y:1500 Z:100}]
-      [RelativeSpawnVelocity:{Z:25}]
-
-
-      
-			[IgnoreSafetyChecks:false]
-
-      </Description>
-      
-    </EntityComponent>
-
 
 
 

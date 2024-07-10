@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!--  
+   this is for testing triggerss. 
+  
+  -->
+   
+  <EntityComponents>
+
+  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>trigger Test</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [Author:Suit Ai]
+      [Color:Green]
+      
+      [ChatMessages:Action Group working]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+      
+      
+
+      </Description>
+      
+    </EntityComponent>
+<!-- 
+
+This is for player close.
+    
+We can just add more and more of these warnings it will pick one at random.
+Currently test messages pls change
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Proximity-Talk-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [MaxChats:2]
+      [MinTime:90]
+      [MaxTime:600]
+      [Author:Suit Ai]
+      [Color:Green]
+      
+      [ChatMessages:Need you know that Scrublord from {Faction},Mention the humans are coming back looks like war is coming]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:If i meant a human i would attack them on sight! we lost alot of ships in the war]
+      [ChatAudio:GreetingSoundId-B]
+      [BroadcastChatType:Chat]
+
+
+      </Description>
+      
+    </EntityComponent>
+    <!-- 
+
+This is for ship close.
+    
+We can just add more and more of these warnings it will pick one at random.
+Currently test messages pls change
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Ship-proximity-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [MaxChats:2]
+      [MinTime:90]
+      [MaxTime:600]
+      [Author:Suit Ai]
+      [Color:Green]
+      
+      [ChatMessages:Unknown ship identify yourself!]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Human Scum are back!!]
+      [ChatAudio:GreetingSoundId-B]
+      [BroadcastChatType:Chat]
+
+
+      </Description>
+      </EntityComponent>
+      <!-- 
+
+This is for ship close.
+    
+We can just add more and more of these warnings it will pick one at random.
+Currently test messages pls change
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Ship-Damage-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [MaxChats:2]
+      [MinTime:90]
+      [MaxTime:600]
+      [Author:Suit Ai]
+      [Color:Green]
+      
+      [ChatMessages:Unknown ship identify yourself!]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Human Scum are back!!]
+      [ChatAudio:GreetingSoundId-B]
+      [BroadcastChatType:Chat]
+
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

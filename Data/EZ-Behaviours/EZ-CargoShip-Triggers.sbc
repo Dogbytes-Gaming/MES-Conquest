@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <EntityComponents>   
+    <!-- 
+    Triggers found here:
+    - Easy-Talk !
+    - EZ-player-close
+    - Sml-EZ-Grid-Clos
+    - Sml-EZ-Damage-Weapon
+    - Sml-EZ-Damage-Player    
+    - Retreat
+    - Crashlanding          
+    
+    
+    General chatter while file each action for info on a research mission 
+
+    -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Easy-Talk</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:PlayerFar]
+            [TargetDistance:2500]
+			[StartsReady:true]
+
+            [MinCooldownMs:300000]
+            [MaxCooldownMs:300001]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Easy-Talk-Jumpdrive]
+            [Actions:Easy-Talk-2]
+            [Actions:Easy-Talk-3]
+            [Actions:Easy-Talk-4]
+			</Description>
+        </EntityComponent>
+        <!-- 
+    
+    This is a proximity chat for when player aproaches ships, 
+    different profiles could be fun  
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>EZ-player-close</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:PlayerNear]
+            [TargetDistance:1500]
+			[StartsReady:true]
+
+            [MinCooldownMs:30000]
+            [MaxCooldownMs:30001]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:EZ-player-close-1]
+            [Actions:proximity-Talk-2]
+            [Actions:proximity-Talk-3]
+            [Actions:proximity-Talk-4]
+			</Description>
+        </EntityComponent>
+
+	
+    <!-- 
+    
+    This is a proximity chat for when ship aproaches ships, 
+    different profiles could be fun  
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-EZ-Grid-Close</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:Targetnear]
+            [TargetDistance:2000]
+			[StartsReady:true]
+
+            [MinCooldownMs:30000]
+            [MaxCooldownMs:30001]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:EZ-Ship-proximity-1]
+            [Actions:Ship-Talk-2]
+            [Actions:Ship-Talk-3]
+            [Actions:Ship-Talk-4]
+			</Description>
+        </EntityComponent>
+        <!-- 
+    
+    This is a reaction to weapon damage
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-EZ-Damage-Weapon</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:Damage]
+			[StartsReady:true]
+
+            [DamageTypes:Rocket]
+            [DamageTypes:Bullet]
+
+            [MinCooldownMs:300]
+            [MaxCooldownMs:301]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:EZ-Damage-Weapon-1]
+            [Actions:Damage-2]
+            [Actions:Damage-3]
+            [Actions:Damage-4]
+
+
+            [UseElseActions:true]
+            [ElseActions:]        <!--    This to stop combat if grid moves out of range    -->
+
+
+
+			</Description>
+        </EntityComponent>
+        <!-- 
+    
+    This is a reaction to Player damage
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-EZ-Damage-Player</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:Damage]
+			[StartsReady:true]
+
+            [DamageTypes:Drill]
+            [DamageTypes:Grind]
+            [DamageTypes:Weld]            
+
+
+            [MinCooldownMs:300]
+            [MaxCooldownMs:301]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:EZ-Player-Damage-1]
+            [Actions:Player-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+        
+        <!-- 
+    
+    This is a Retreat situation
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Retreat</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:ActiveGunsPercentage]
+			[StartsReady:true]
+            [PercentageOfWeaponsRemaining:40]
+        
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Retreat-1]
+            [Actions:Ship-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+        <!-- 
+    
+    This is a Crashlanding situation
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Escort-Request</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [UseFailCondition:true]
+            [Type:HealthPercentage]
+			[StartsReady:true]
+            [PercentageOfHealthRemaining:60]      
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Crashlanding-1]
+            [Actions:Ship-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+
+	</EntityComponents>
+</Definitions>

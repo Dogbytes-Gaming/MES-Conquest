@@ -9,7 +9,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>[Wreck]-Epod1</SubtypeId>
+        <SubtypeId>Wrecks-1</SubtypeId>
       </Id>
       <Description>
 
@@ -23,7 +23,7 @@
 
       </Description>
       <IsPirate>true</IsPirate>
-      <Frequency>1.0</Frequency>
+      <Frequency>10.0</Frequency>
       <Prefabs>     
          <Prefab SubtypeId="[Wreck]-Epod1">
           <Position>
@@ -40,7 +40,7 @@
       <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>[Wreck]-Epod2</SubtypeId>
+        <SubtypeId>Wrecks-2</SubtypeId>
       </Id>
       <Description>
 
@@ -54,7 +54,7 @@
 
       </Description>
       <IsPirate>true</IsPirate>
-      <Frequency>1.0</Frequency>
+      <Frequency>5.0</Frequency>
       <Prefabs>     
          <Prefab SubtypeId="[Wreck]-Epod2">
           <Position>

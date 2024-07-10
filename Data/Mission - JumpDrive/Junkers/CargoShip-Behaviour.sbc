@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+    <!-- Small-CargoShip-Behaviour
+
+    Notes: 
+        Make condition profiles
+        1.Medium-Difficulty evey 15mins
+        2.Hard-Difficulty every 30mins
+        3.Action Profiles  need cooldowns
+        3.Chat profiles  have added multipler chat profiles for different Mission objective start with an action for the profile as label below i want this to be available
+        for all easy profiles to pick from.
+        4.Communications 
+                            Ship-Distress-call
+
+
+        5.Target Profiles            
+        as labeled        
+
+        
+
+        
+  
+    -->		   	 
+			
+      
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Small-CargoShip-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:CargoShip]	
+            [AutopilotData:test1] <!-- this is how we want it to fly-->
+            [TargetData:test2] <!-- this is how it will select a target-->
+            [WeaponSystem:test3] <!-- this is how we want the npc to use its weapons-->
+            	
+			[Triggers:Sml-Medium-Difficulty-Check]
+            [Triggers:Sml-Hard-Difficulty-Check]
+            [Triggers:Easy-Talk]
+            [Triggers:EZ-player-close] 
+            [Triggers:Sml-EZ-Grid-Close] 
+            [Triggers:Sml-EZ-Damage-Weapon] 
+            [Triggers:Sml-EZ-Damage-Player] 
+            [Triggers:Retreat]    
+            [Triggers:Crashlanding]  
+
+            [TriggerGroups:Planet-Commands-Triggers]
+                   
+        
+
+			 
+			</Description>
+      </EntityComponent>
+      
+      
+
+
+
+      <!-- Medium Difficulty check -->
+      <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-Medium-Difficulty-Check</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:TargetFar]
+			[StartsReady:true]
+			[MaxActions:1]
+            [Conditions:Medium-Difficulty]
+			[Actions:Sml-Change-Medium-Diffculty]
+
+			</Description>
+        </EntityComponent>
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Sml-Change-Medium-Diffculty</SubtypeId>
+      </Id>
+      <Description>
+
+      
+			[RivalAI Action]      
+            [ChangeBehaviorSubclass:true]
+            [NewBehaviorSubclass:Sml-Medium-Difficulty-Behavior]
+
+      
+      
+       </Description>
+      
+    </EntityComponent>
+    <!-- Hard Difficulty check -->
+     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-Hard-Difficulty-Check</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:TargetFar]
+			[StartsReady:true]
+			[MaxActions:1]
+            [Conditions:Hard-Difficulty]
+			[Actions:Sml-Change-Hard-Diffculty]
+            
+			</Description>
+        </EntityComponent>
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Sml-Change-Hard-Diffculty</SubtypeId>
+      </Id>
+      <Description>
+
+      
+			[RivalAI Action]      
+            [ChangeBehaviorSubclass:true]
+            [NewBehaviorSubclass:Sml-Hard-Difficulty-Behavior]
+
+      
+      
+       </Description>
+      
+    </EntityComponent>
+
+
+
+
+
+      <!-- Medium difficulty behaviour -->
+      <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-Medium-Difficulty-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Passive]	
+            	
+			[Triggers:Junker-Damage-Trigger]
+
+			 
+			</Description>
+      </EntityComponent>
+      <!-- Hard difficulty behaviour -->
+      <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Sml-Hard-Difficulty-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Passive]	
+            	
+			[Triggers:Junker-Damage-Trigger]
+
+			 
+			</Description>
+      </EntityComponent>
+
+
+
+	
+
+
+
+
+
+
+
+	</EntityComponents>
+</Definitions>

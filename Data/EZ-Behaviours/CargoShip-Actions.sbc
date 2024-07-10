@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- 
+This group is for - Easy-Talk the is 1 for each of the missions.
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Easy-Talk-Jumpdrive</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:Jumpdrive-Whispers]
+	
+      </Description>
+      
+    </EntityComponent>
+  
+<!-- 
+EZ-player-close - this is a general conversatoin from ships hinting at agression 
+open to changes.
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EZ-player-close</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:proximity-Talk-1]
+	
+      </Description>
+      
+    </EntityComponent>
+
+    <!-- 
+    
+    this is the grids reaction to any grid getting close. 
+    the idea is the ship sends message, changes heading and increases speed is combat ready
+    
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EZ-Ship-proximity-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:Ship-proximity-1]
+
+      [RefreshTarget:true]
+      [ChangeTargetProfile:True]
+      [NewTargetProfileId:Value]
+	
+      </Description>
+      
+    </EntityComponent>
+    <!-- 
+    
+    this is the grids reaction to any Weapon Damage, 
+    ship will defend it self only once attack, 
+    reputation change will take all players in the faction just past the required amount for the 
+    medium conidition meaning the once the next check is done the ship will
+    change behaviour. we set up once we those set. 
+    
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EZ-Damage-Weapon-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:Ship-Damage-1]      
+
+      [BroadcastCommandProfiles:true]
+      [CommandProfileIds:[BotSpawnProfileNames:Value]]
+
+
+      [SwitchToReceivedTarget:Value]
+      [SetWeaponsToMaxRange:true]
+
+     
+      [ChangeAttackerReputation:true]
+      [ReputationChangesForAllAttackPlayerFactionMembers:true]
+      [ReputationMinCap:Value]
+      [ReputationMaxCap:Value]
+
+	
+      </Description>
+      
+    </EntityComponent>
+    <!-- 
+    
+    this is the grids reaction to any onboard player damage, 
+     
+    
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EZ-Player-Damage-1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:Player-Damage-1]      
+
+      [AddBotsToGrid:true]
+      [BotCount:5]
+      [BotSpawnProfileNames:Value]
+      
+
+     
+      [ChangeAttackerReputation:false]
+      [ReputationChangesForAllAttackPlayerFactionMembers:false]
+      
+	
+      </Description>
+      
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Retreat--1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+          
+
+         
+
+     
+      
+      
+	
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

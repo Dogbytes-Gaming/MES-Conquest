@@ -34,7 +34,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[Junk]-Smuggler">
           <Position>
@@ -43,7 +43,7 @@
             <Z>-100.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour></Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="Junker Cargo Ship Mk 1">
           <Position>
@@ -52,7 +52,7 @@
             <Z>-100.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour></Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="Junker Cargo Ship Mk 2">
           <Position>
@@ -61,7 +61,7 @@
             <Z>-100.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour></Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>   
       </Prefabs>
     </SpawnGroup>  -->
@@ -92,7 +92,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[Junk]-Nomad-Cargo-Ship">
           <Position>
@@ -101,7 +101,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[Junk]-Smuggler">
           <Position>
@@ -110,7 +110,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="Junker Cargo Ship Mk 1">
           <Position>
@@ -119,7 +119,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="Junker Cargo Ship Mk 2">
           <Position>
@@ -128,12 +128,12 @@
             <Z>0.0</Z>
           </Position>
           <Speed>18</Speed>
-          <Behaviour>Junker-CargoShip</Behaviour>
+          <Behaviour>Small-CargoShip-Behavior</Behaviour>
         </Prefab>
 
         </Prefabs>
       </SpawnGroup>   
-      <!-- Destroyer Ships -->
+      <!-- Destroyer Ships 
       <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -191,7 +191,7 @@
           <Behaviour>Junker-Convoy</Behaviour>
         </Prefab>
          </Prefabs>
-        </SpawnGroup>  
+        </SpawnGroup>  -->
         <!-- Cruiser Ships 
         <SpawnGroup>
       <Id>
@@ -279,6 +279,8 @@
         </Prefabs>
       </SpawnGroup>   -->
 
+      <!-- Flying convoys
+      
       <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -329,7 +331,9 @@
         
 
         </Prefabs>
-      </SpawnGroup>    
+      </SpawnGroup>    -->
+
+      <!-- ground wheeled convoys
 
       <SpawnGroup>
       <Id>
@@ -398,7 +402,7 @@
         </Prefab>
 
         </Prefabs>
-      </SpawnGroup>    
+      </SpawnGroup>    -->
      
          
         

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+    <!-- Junker-Planet-Inst-Behaviour
+  
+    -->		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Planet-Inst-Behavior</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Behavior]
+			[BehaviorName:Passive]	
+            	
+			[Triggers:Junker-Damage-Trigger]
+
+			 
+			</Description>
+      </EntityComponent>    
+
+
+	</EntityComponents>
+</Definitions>

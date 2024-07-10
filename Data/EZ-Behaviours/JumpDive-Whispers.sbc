@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+<!-- 
+    
+Tese will be all the chatprofiles that we use to give the player information
+on the jumpdrive misson. 
+
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Jumpdrive-Whispers</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:2]
+      
+      [MinTime:90]
+      [MaxTime:600]      
+
+      
+      [Author:Suit Ai]
+      [Color:Green]
+      
+      [ChatMessages:{PlayerName},I am picking up a transmission!]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+      
+      [ChatMessages:Cant believe that the Junkers found that out research outpost, and it still has the JumpDrive schematics they took!]
+      [ChatAudio:GreetingSoundId-B]
+      [BroadcastChatType:Chat]
+
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

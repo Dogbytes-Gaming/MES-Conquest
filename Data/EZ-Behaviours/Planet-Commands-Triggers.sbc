@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+  <!-- 
+  
+      Made a group incse we want to add more commands so then we only have to
+      add the info here
+
+    
+
+  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Planet-Commands-Triggers</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI TriggerGroup]
+      [Triggers:Planet-Installtion-Support-Request]
+      [Triggers:Ship-Support-Request]
+      [Triggers:Cargo-Delivery-Request] 
+      [Triggers:Escort-Request] 
+      
+      </Description>
+      
+    </EntityComponent>
+    <!-- 
+   Notes for command codes 
+
+   i dont want the ship to respond when under certain conditions:
+            1.Damaged
+            2.in combat
+            3.missing weapons.
+
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Command-Recieved</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:CommandReceived]
+			[StartsReady:true]
+
+            [CommandReceiveCode:Value]         
+
+            
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Planet-Installtion-Support-1]
+            [Actions:Player-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+
+<!-- 
+    
+    This is a reaction to a command code from a ship under attack
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Ship-Support-Request</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:CommandReceived]
+			[StartsReady:true]
+
+            [CommandReceiveCode:Value]    
+            [ToggleWithTriggerProfile:Value]     
+
+            [MinCooldownMs:300]
+            [MaxCooldownMs:301]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Ship-Support-1]
+            [Actions:Ship-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+    <!-- 
+    
+    This is a reaction to a command code from a station for a delivery
+
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Cargo-Delivery-Request</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:CommandReceived]
+			[StartsReady:true]
+
+            [CommandReceiveCode:Value]   
+            [ToggleWithTriggerProfile:Value]      
+
+            [MinCooldownMs:300]
+            [MaxCooldownMs:301]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Cargo-Delivery-1]
+            [Actions:Ship-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+        <!-- 
+    
+    This is a reaction to a command code from a ship for a Escort
+    -->
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Escort-Request</SubtypeId>
+            </Id>
+            <Description>
+			[MES AI Trigger]
+			[UseTrigger:true]
+            [Type:CommandReceived]
+			[StartsReady:true]
+
+            [CommandReceiveCode:Value]  
+            [ToggleWithTriggerProfile:Value]      
+
+            [MinCooldownMs:300]
+            [MaxCooldownMs:301]
+
+            [ActionExecution:Random]
+			[MaxActions:1]
+			[Actions:Cargo-Delivery-1]
+            [Actions:Ship-Damage-2]
+            [Actions:Player-Damage-3]
+            [Actions:Player-Damage-4]
+			</Description>
+        </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
