@@ -146,6 +146,7 @@
       
        </Description>
        <!-- Research scan start trugger -->
+       </EntityComponent>
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -182,7 +183,6 @@
       </Description>
     </EntityComponent>
       
-    </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -200,7 +200,7 @@
        </Description>
     
 
-
+  </EntityComponent>
 
 
 
